@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+
+.hublink {
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+.spacemaker {
+    height: 17px;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    color: rgb(170, 158, 53);
+    background-color: rgb(77, 77, 77);
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+body {
+    height: 1000px;
+    border-radius: 1px;
+    border: 0px solid;
+    background-color: rgba(0, 0, 0, 0.322);
+    font-family: "Prompt", "sans-serif";
+    color: rgb(255, 114, 20);
+    
+
+}
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 114, 20);
+}
+
+.active {
+
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 1px;
+    height: 23px;
+    background-color: rgb(59, 59, 59);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+section ol {
+    padding-left: 30px;
+    list-style: none;
+    
+}
+
+.header {
+
+    border-radius: 0px;
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    top: 0%;
+    width: 100%;
+}
+
+h3, h1, p{
+    padding-left: 15px;
+}
+
+footer {
+    border-radius: 3px;
+    position: relative;
+    background-color: rgba(37, 37, 37);
+    width: 100%;
+}
+
+article {
+    background-color: rgba(37, 37, 37);
+    padding-left: 0px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.learning {
+    padding-left: 30px;
+    background-color: rgba(37, 37, 37);
+}
+
+.section p {
+    padding-left: 10px;
+
+}
+
+.aside {
+
+    border-radius: 5px;
+    padding-left: 10px;
+    border-top: 5px solid rgb(77, 77, 77);
+    border-bottom: 5px solid rgb(77, 77, 77);
+}
+
+.logo {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.nav {
+    border-radius: 3px;   
+    width: 100%;
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 114, 20);
+}
+
+.menu a:hover {
+
+    color: rgb(255, 114, 20);
+    border-radius: 1px;
+    height: 24px;
+    background-color: rgb(77, 77, 77);
+}
+
+.hamb {
+    float: middle;
+    padding: 35px 15px;
+    cursor: pointer;
+}
+
+.hamb-line {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 2px;
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background-color: antiquewhite;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all, 3s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+.menu li {
+    float: left;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked~nav {
+    max-height: 100%;
+}
+
+.side-menu:checked~.hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked~.hamb-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.side-menu:checked~.hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+.content{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.image {
+    text-align: center;
+    
+}
+.image img{
+    border-radius: 100%;
+    width: 300px;
+}
+.content h1{
+    color: black;
+    text-align: center;
+}
+.content p{
+    text-align: center;
+    color: black;
+    
+}
+.images{
+    text-align: center;
+}
+.images img{
+    height: 200px;
+    border-radius: 5%;
+}
+.content .space{
+    height: 3px;
+    width: 100%;
+    background-color:rgb(37, 37, 37);
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+@media(min-width:768px) {
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: middle;
+        width: fit-content;
+        display: block;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: rgb(59, 59, 59);
+        color: #85888c;
+    }
+
+    .hamb-line {
+        display: none;
+    }
+}
+@media(max-width: 1150px){
+    .content .cv{
+        width: 500px;
+    }
+    .content .cv img{
+        width: 500px;
+    }
+}
